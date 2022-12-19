@@ -1,8 +1,8 @@
 import React from 'react';
 import {AiOutlineMail} from 'react-icons/ai'
 import { RiLockPasswordLine } from 'react-icons/ri'
-import {FcGoogle} from 'react-icons/fc'
-import {BsFacebook} from 'react-icons/bs'
+
+import {BsFacebook, BsGoogle} from 'react-icons/bs'
 import { FaExclamation } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom';
 
@@ -43,7 +43,7 @@ function Login(props) {
             
             <div className="login-alternates"></div>
             <h2>or Sign Up with </h2>
-            <FcGoogle style={{
+            <BsGoogle style={{
                 fontSize:"40px",
                 padding: "0 20px 0 0"
             }}/>
