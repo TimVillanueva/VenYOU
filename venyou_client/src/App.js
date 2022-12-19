@@ -9,10 +9,12 @@ import {DataContext} from './DataContext'
 function App() {
 
 const [currentVenue, setCurrentVenue] = useState({})
+const [currentEvent, setCurrentEvent] = useState({})
 
   return (
     <DataContext.Provider value = {{
-      currentVenue, setCurrentVenue
+      currentVenue, setCurrentVenue,
+      currentEvent, setCurrentEvent
     }}>
     <div className="App">
       <Header />
