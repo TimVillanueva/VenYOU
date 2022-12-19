@@ -53,7 +53,7 @@ function Venue(props) {
                 venues.map((venue, index)=>(
                     <div key={index} className="home-venue-card" onClick={()=>handleClick(venue)}>
                         <p style={{ 
-                        backgroundImage: `url("${venue.photo_url}")`
+                        backgroundImage: `url(${venue.photo_url})`
                         }}></p>
                         <p className='venue-name'>{venue.name}</p>
                     </div>
