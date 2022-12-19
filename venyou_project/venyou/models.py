@@ -18,3 +18,6 @@ class Event(models.Model):
     sold_out = models.BooleanField()
     tag = models.CharField(max_length=100)
     location = models.ForeignKey(Venue, on_delete=models.CASCADE, related_name='events')
+
+    def __str__(self):
+        return self.name

@@ -3,6 +3,7 @@ import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home'
 import VenueDetails from './components/VenueDetails'
+import Login from './components/Login'
 import {useContext, useState} from 'react'
 import {DataContext} from './DataContext'
 
@@ -23,6 +24,7 @@ const [currentEvent, setCurrentEvent] = useState({})
       <Routes>
         <Route path = '' element ={<Home/>}/>
         <Route path ='/venueDetails' element ={<VenueDetails/>}/>
+        <Route path = '/login' element ={<Login/>}/>
       </Routes>
 
 

@@ -11,7 +11,7 @@ export default function Header () {
             <div className='nav'>
                 <Link className='nav-link' to='/'>VENUES</Link>
                 <Link className='nav-link' to='/events'>EVENTS</Link>
-                <Link className='nav-link' to='/'>LOG IN</Link>
+                <Link className='nav-link' to='/login'>LOG IN</Link>
             </div>
         </div>
     )
