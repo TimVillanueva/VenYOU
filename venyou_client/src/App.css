@@ -1,13 +1,97 @@
 *{
   margin: 0;
   padding: 0;
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
+
+html{
+  background: #4D7D55;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.logo-container{
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  font-size: 30px;
+  left: 40px;
+  top: -20px;
+  color: #7DCF8F;
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.slogan{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 300px;
+}
+
+.slogan-text{
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.slogan-text2{
+  font-weight: 400;
+  margin-top: 8px;
+  font-size: 30px;
+}
+
+.slogan-text3{
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.venue-header{
+  margin-left:  40px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.crowd{
+  position: absolute;
+  width: 100%;
+  
+  left: 2px;
+  top: 130px;
+  mix-blend-mode: screen;
+}
+
 .home-grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  
+  justify-items: center;
+  row-gap: 24px;
 }
 
 .home-venue-card{
-  border:2px solid black
+  width: 400px;
+  height: 200px;
+  border: 3px solid #0044B1;
+  filter: drop-shadow(11px 13px 18px rgba(0, 0, 0, 0.35));
+  border-radius: 29px;
+  position: relative;
+}
+
+.venue-name{
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 30px;
+  font-weight: 600;
 }
