@@ -13,7 +13,7 @@ function Login(props) {
     let navigate = useNavigate()
 
     const handleSubmit = () => {
-        navigate('/')
+        navigate('')
     }
 
     return (
