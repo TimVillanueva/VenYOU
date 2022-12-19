@@ -88,6 +88,11 @@ html{
   filter: drop-shadow(11px 13px 18px rgba(0, 0, 0, 0.35));
   border-radius: 29px;
   position: relative;
+  transition: all .3s ease-in-out;
+}
+
+.home-venue-card:hover{
+  scale: 105%;
 }
 
 .venue-name{
@@ -96,7 +101,46 @@ html{
   left: 16px;
   font-size: 30px;
   font-weight: 600;
+  text-shadow: 2px 2px 5px black;
 }
+
+.venue-banner{
+  margin: 0 auto;
+  width: 1200px;
+  height: 503px;
+  border-radius: 34px;
+  position: relative;
+}
+
+.venue-banner-name{
+  position: absolute;
+  bottom: 32px;
+  left: 24px;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px black;
+}
+
+.venue-banner-info{
+  margin-bottom: 150px;
+}
+
+.venue-location{
+  position: absolute;
+  font-size: 25px;
+  font-weight: 300;
+  left: 130px;
+  margin-top: 8px;
+}
+
+.venue-capacity{
+  position: absolute;
+  font-size: 25px;
+  font-weight: 300;
+  right: 130px;
+  margin-top: 8px;
+}
+
 .login-page{
   display:flex;
   justify-content: center;

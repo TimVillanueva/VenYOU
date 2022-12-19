@@ -51,7 +51,7 @@ console.log(venues)
             <div className="home-grid">
             {
                 venues.map((venue, index)=>(
-                    <div style ={{backgroundImage: `url(${venue.photo_url})`}} key={index} className="home-venue-card" onClick={()=>handleClick(venue)}>
+                    <div style ={{backgroundImage: `url(${venue.photo_url})`, backgroundSize: 'cover'}} key={index} className="home-venue-card" onClick={()=>handleClick(venue)}>
                         <p className='venue-name'>{venue.name}</p>
                     </div>
                 ))
