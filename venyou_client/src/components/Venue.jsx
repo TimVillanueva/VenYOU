@@ -8,7 +8,7 @@ import crowd from '../Assets/crowd.png'
 function Venue(props) {
     const BASE_URL='http://localhost:8000';
     const navigate=useNavigate();
-    const [venues, setVenues] = useState([])
+    const [venues, setVenues] = useState([{name:"", photo_url:null}])
     const {setCurrentVenue} = useContext(DataContext)
     
     useEffect(()=>{
@@ -30,8 +30,8 @@ function Venue(props) {
         navigate('/venueDetails')
     }
 
-
-    return (
+console.log(venues)
+    return venues[0].photo_url ? (
         <div>
 
             <div className='slogan'>
@@ -51,17 +51,14 @@ function Venue(props) {
             <div className="home-grid">
             {
                 venues.map((venue, index)=>(
-                    <div key={index} className="home-venue-card" onClick={()=>handleClick(venue)}>
-                        <p style={{ 
-                        backgroundImage: `url(${venue.photo_url})`
-                        }}></p>
+                    <div style ={{backgroundImage: `url(${venue.photo_url})`}} key={index} className="home-venue-card" onClick={()=>handleClick(venue)}>
                         <p className='venue-name'>{venue.name}</p>
                     </div>
                 ))
             }
             </div>
         </div>
-    );
+    ) : <h1>Loading</h1>;
 }
 
 export default Venue;
