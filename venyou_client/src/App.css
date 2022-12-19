@@ -12,7 +12,9 @@ html{
 .nav{
   display: flex;
   justify-content: space-around;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 120px;
 }
 
 .logo-container{
@@ -66,10 +68,10 @@ html{
 .crowd{
   position: absolute;
   width: 100%;
-  
   left: 2px;
-  top: 130px;
+  top: -120px;
   mix-blend-mode: screen;
+  z-index: -1;
 }
 
 .home-grid{
