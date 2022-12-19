@@ -35,14 +35,30 @@ const changeCounter = () =>
 {setCounter(counter+1)}
 
     return (
-        <div>
-            <div className="home-grid">
+        <div className='venue-detail-container'>
+
+            <div className='venue-banner' style ={{backgroundImage: `url(${currentVenue.photo_url})`, backgroundSize: 'cover'}}>
+                <p className='venue-banner-name'>{currentVenue.name}</p>
+            </div>
+
+            <div className='venue-banner-info'>
+                <p className='venue-location'>{currentVenue.location}</p>
+                <p className='venue-capacity'>Capacity - {currentVenue.capacity}</p>
+            </div>
+
+            <div>
+                <p className='venue-header'> EVENT</p>
+            </div>
+
+            <div>
             {events.length>0?(
             
-            <div>
+            <div className="home-grid">
             {
                 events.map((event, index)=>(
-                    <div key={index} className="home-venue-card" onClick={()=>handleClick(event)}><p>{event.name}</p></div>
+                    <div style ={{backgroundImage: `url(${event.photo_url})`, backgroundSize: 'cover'}} key={index} className="home-venue-card" onClick={()=>handleClick(event)}>
+                        <p className='venue-name'>{event.name}</p>
+                    </div>
                 ))
             }</div>
             ):<div><h1>Loading</h1><button onClick={changeCounter}>Reload</button></div>}
