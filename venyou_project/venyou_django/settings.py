@@ -106,7 +106,7 @@ DATABASES = {
         'NAME': 'venyou',
         'USER': 'venuser',
         'PASSWORD': 'admin',
-        'HOST': 'localhost'
+        'HOST': 'venyou-production.up.railway.app'
     }
 }
 
