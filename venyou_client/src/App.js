@@ -6,6 +6,7 @@ import VenueDetails from './components/VenueDetails'
 import Login from './components/Login'
 import {useContext, useState} from 'react'
 import {DataContext} from './DataContext'
+import Events from './components/Events'
 
 function App() {
 
@@ -25,6 +26,7 @@ const [currentEvent, setCurrentEvent] = useState({})
         <Route path = '' element ={<Home/>}/>
         <Route path ='/venueDetails' element ={<VenueDetails/>}/>
         <Route path = '/login' element ={<Login/>}/>
+        <Route path = '/events' element ={<Events/>}/>
       </Routes>
 
 
