@@ -1,16 +1,20 @@
 import {useState,useEffect, useContext } from 'react'
 import Axios from 'axios'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, useLocation} from 'react-router-dom'
 import { DataContext } from '../DataContext'
 import crowd from '../Assets/crowd.png'
 
 import React from 'react';
+
+
 
 export default function Events () {
     const {currentVenue, setCurrentEvent, currentEvent} = useContext(DataContext)
     const BASE_URL='http://localhost:8000';
     const [events, setEvents] = useState([])
 
+    const navigate = useNavigate()
+    const { eventDetails } = useLocation()
 
     useEffect(()=>{
         const getEvents = async() => {
@@ -29,6 +33,7 @@ export default function Events () {
     
     const handleClick = (event) => {
         setCurrentEvent(event)
+        navigate('eventDetails')
     }
 
 

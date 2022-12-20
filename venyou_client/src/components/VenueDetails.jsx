@@ -28,7 +28,7 @@ useEffect(()=>{
 
 const handleClick = (event) => {
     setCurrentEvent(event)
-    navigate('/eventDetails')
+    navigate('eventDetails')
 }
 
 const changeCounter = () =>
