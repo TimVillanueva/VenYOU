@@ -141,11 +141,16 @@ html{
   margin-top: 8px;
 }
 
+.event-info-2cards{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
 .event-price-card{
   width: 40%;
   height: 227px;
   margin-top: 80px;
-  margin-left: 40px;
   background: #2A5130;
   border-radius: 34px;
   display:flex;
@@ -188,6 +193,23 @@ html{
 .price-info{
   font-size: 35px;
   font-weight: 300;
+}
+
+.venue-info-card{
+  width: 40%;
+  height: 227px;
+  margin-top: 80px;
+  border-radius: 34px;
+  position: relative;
+}
+
+.venue-info-name{
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px black;
 }
 
 .login-page{
