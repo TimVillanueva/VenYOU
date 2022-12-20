@@ -1,1 +1,1 @@
-web: gunicorn 'venyou_django.wsgi'
+web: gunicorn venyou_django.wsgi --log-file -
