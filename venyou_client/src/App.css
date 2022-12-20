@@ -266,9 +266,13 @@ html{
 .footer {
   display: flex;
   justify-content: space-around;
+
 }
 
 .footer-container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   margin: 25px;
   font-weight: 700;
 }
