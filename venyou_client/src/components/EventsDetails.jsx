@@ -36,27 +36,29 @@ const changeCounter = () =>
                 <p className='venue-banner-name'>{currentEvent.name}</p>
             </div>
 
-            <div className='event-price-card'>
-                <div className='date-info-div'>
-                    <p className='date-info'>Date - {currentEvent.date}</p>
-                </div>
-                <div  className='price-info-row'>
-                    <div className='available-card'>
-                        <p className='available-text'>AVAILABLE</p>
-                    </div>
-                    <div className='price-info-div'>
-                        <p className='price-info'>Price - ${currentEvent.price}</p>
-                    </div>
-                </div>
-            </div>
+            <div className='event-info-2cards'>
 
+                <div className='event-price-card'>
+                    <div className='date-info-div'>
+                        <p className='date-info'>Date - {currentEvent.date}</p>
+                    </div>
+                    <div  className='price-info-row'>
+                        <div className='available-card'>
+                            <p className='available-text'>AVAILABLE</p>
+                        </div>
+                        <div className='price-info-div'>
+                            <p className='price-info'>Price - ${currentEvent.price}</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div>
+                <div className='venue-info-card' style ={{backgroundImage: `url(${currentVenue.photo_url})`, backgroundSize: 'cover'}}>
+                        <p className='venue-name'>{currentVenue.name}</p>
+                    </div>
+
+                <div>
         
-                
-                <div className="event-details">
-                    
-                </div>
+            </div>   
 
             
             </div>
