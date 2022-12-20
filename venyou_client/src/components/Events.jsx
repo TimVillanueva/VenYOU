@@ -1,7 +1,8 @@
 import {useState,useEffect, useContext } from 'react'
 import Axios from 'axios'
 import {useNavigate} from 'react-router-dom'
-import { DataContext } from '../DataContext';
+import { DataContext } from '../DataContext'
+import crowd from '../Assets/crowd.png'
 
 import React from 'react';
 
@@ -9,8 +10,6 @@ export default function Events () {
     const {currentVenue, setCurrentEvent, currentEvent} = useContext(DataContext)
     const BASE_URL='http://localhost:8000';
     const [events, setEvents] = useState([])
-
-    const navigate = useNavigate()
 
 
     useEffect(()=>{
@@ -30,13 +29,27 @@ export default function Events () {
     
     const handleClick = (event) => {
         setCurrentEvent(event)
-        navigate('/eventDetails')
     }
 
 
 
     return (
         <div className='list-of-events'>
+
+            <div className='slogan'>
+                <p className='slogan-text'>Your city, your events</p>
+                <p className='slogan-text2'>Book memories,</p>
+                <p className='slogan-text3'>not just tickets</p>
+            </div>
+
+            <div>
+                <img className='crowd' src={crowd} alt=''></img>
+            </div>
+
+            <div>
+                <p className='venue-header'> EVENTS</p>
+            </div>
+
             <div className="home-grid">
             {
                 events.map((event, index)=>(
