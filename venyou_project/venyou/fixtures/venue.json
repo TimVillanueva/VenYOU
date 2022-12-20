@@ -1,0 +1,74 @@
+[
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "The Royal Albert Hall",
+        "capacity": "5272",
+        "photo_url": "https://mr1.homeflow-assets.co.uk/files/site_asset/image/4985/3841/768x_/RoyalAlbertHall-Header.jpg",
+        "location": "United Kingdom"}
+    },
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "Red Rocks Amphitheatre",
+        "capacity": "9545",
+        "photo_url": "https://assets.redrocksonline.com/wp-content/uploads/2019/10/12114837/RRX-AliveCoverage-webres-2-1920x1280.jpg",
+        "location": "Colorado, US"}
+    },
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "Sydney Opera House",
+        "capacity": "5738",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/SSO_at_the_Concert_Hall_in_the_Sydney_Opera_House_on_20_July_2022.jpg/320px-SSO_at_the_Concert_Hall_in_the_Sydney_Opera_House_on_20_July_2022.jpg",
+        "location": "Sydney, Australia"}
+    },
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "The O2 Arena",
+        "capacity": "20000",
+        "photo_url": "https://studor.net/media/projects/o2-arena2.jpg",
+        "location": "United Kingdom"}
+    },
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "Radio City Music Hall",
+        "capacity": "6015",
+        "photo_url": "https://media.timeout.com/images/105915513/image.jpg",
+        "location": "NY, US"}
+    },
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "Amphitheater of Nimes",
+        "capacity": "24,000",
+        "photo_url": "https://live.staticflickr.com/3161/2362295186_1b4ef24e4f_b.jpg",
+        "location": "France"}
+    },
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "Hollywood Bowl",
+        "capacity": "17,500",
+        "photo_url": "https://www.thomasaquinas.edu/sites/default/files/inline-images/hssp-hollywood-bowl-ca21-750b.png",
+        "location": "California"}
+    },
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "Tabernacle",
+        "capacity": "5960",
+        "photo_url": "https://evergreene.com/wp-content/uploads/2019/11/BrooklynTabernacleNY2.jpg",
+        "location": "NY"}
+    },
+    {
+        "model":"venyou.venue",
+        "fields":{
+        "name": "Grand Ole Opry",
+        "capacity": "4372",
+        "photo_url": "https://cdn.getyourguide.com/img/tour/5e3b32249117d.jpeg/98.jpg",
+        "location": "Nashville, TN"}
+    }
+]
