@@ -182,7 +182,14 @@ html{
   border-radius: 17px;
 }
 
-.available-text{
+.sold-out{
+  width: 184px;
+  height: 65px;
+  background: rgb(159, 23, 23);
+  border-radius: 17px;
+}
+
+.available-text,.sold-out-text{
   font-size: 30px;
   font-weight: 700;
   text-align: center;

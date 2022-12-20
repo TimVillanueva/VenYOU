@@ -43,9 +43,17 @@ const changeCounter = () =>
                         <p className='date-info'>Date - {currentEvent.date}</p>
                     </div>
                     <div  className='price-info-row'>
+                        {
+                            currentEvent.sold_out ? (
+                                <div className='sold-out'>
+                                <p className='sold-out-text'>SOLD OUT</p>
+                                </div>
+                            ):(
                         <div className='available-card'>
                             <p className='available-text'>AVAILABLE</p>
                         </div>
+                            )
+                        }
                         <div className='price-info-div'>
                             <p className='price-info'>Price - ${currentEvent.price}</p>
                         </div>

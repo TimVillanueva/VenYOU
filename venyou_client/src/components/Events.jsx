@@ -10,6 +10,8 @@ export default function Events () {
     const BASE_URL='http://localhost:8000';
     const [events, setEvents] = useState([])
 
+    const navigate = useNavigate()
+
 
     useEffect(()=>{
         const getEvents = async() => {
@@ -28,6 +30,7 @@ export default function Events () {
     
     const handleClick = (event) => {
         setCurrentEvent(event)
+        navigate('/eventDetails')
     }
 
 
