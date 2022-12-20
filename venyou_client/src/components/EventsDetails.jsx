@@ -40,7 +40,7 @@ const changeCounter = () =>
                 <div className='date-info-div'>
                     <p className='date-info'>Date - {currentEvent.date}</p>
                 </div>
-                <div className='price-info-row'>
+                <div  className='price-info-row'>
                     <div className='available-card'>
                         <p className='available-text'>AVAILABLE</p>
                     </div>

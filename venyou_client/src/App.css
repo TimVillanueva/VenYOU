@@ -148,6 +148,9 @@ html{
   margin-left: 40px;
   background: #2A5130;
   border-radius: 34px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .date-info-div{
@@ -172,7 +175,6 @@ html{
   height: 65px;
   background: #7DCF8F;
   border-radius: 17px;
-  margin-top: 90px;
 }
 
 .available-text{
@@ -182,9 +184,6 @@ html{
   margin-top: 15px;
 }
 
-.price-info-div{
-  margin-top: 100px;
-}
 
 .price-info{
   font-size: 35px;
