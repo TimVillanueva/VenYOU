@@ -1,1 +1,1 @@
-web: gunicorn 'venyou.wsgi'
+web: gunicorn 'venyou_django.wsgi'
