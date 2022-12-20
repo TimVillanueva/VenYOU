@@ -36,9 +36,18 @@ const changeCounter = () =>
                 <p className='venue-banner-name'>{currentEvent.name}</p>
             </div>
 
-            <div className='venue-banner-info'>
-                <p className='venue-capacity'>Date - {currentEvent.date}</p>
-                <p className='venue-location'>Price - ${currentEvent.price}</p>
+            <div className='event-price-card'>
+                <div className='date-info-div'>
+                    <p className='date-info'>Date - {currentEvent.date}</p>
+                </div>
+                <div className='price-info-row'>
+                    <div className='available-card'>
+                        <p className='available-text'>AVAILABLE</p>
+                    </div>
+                    <div className='price-info-div'>
+                        <p className='price-info'>Price - ${currentEvent.price}</p>
+                    </div>
+                </div>
             </div>
 
 
