@@ -59,7 +59,7 @@ html{
 }
 
 .venue-header{
-  margin-left:  40px;
+  margin-left: 6%;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -106,7 +106,7 @@ html{
 
 .venue-banner{
   margin: 0 auto;
-  width: 1200px;
+  width: 90%;
   height: 503px;
   border-radius: 34px;
   position: relative;
@@ -129,7 +129,7 @@ html{
   position: absolute;
   font-size: 25px;
   font-weight: 300;
-  left: 130px;
+  left: 10%;
   margin-top: 8px;
 }
 
@@ -137,7 +137,7 @@ html{
   position: absolute;
   font-size: 25px;
   font-weight: 300;
-  right: 130px;
+  right:10%;
   margin-top: 8px;
 }
 
