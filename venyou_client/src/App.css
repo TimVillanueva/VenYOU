@@ -141,6 +141,56 @@ html{
   margin-top: 8px;
 }
 
+.event-price-card{
+  width: 40%;
+  height: 227px;
+  margin-top: 80px;
+  margin-left: 40px;
+  background: #2A5130;
+  border-radius: 34px;
+}
+
+.date-info-div{
+  margin-top: 20px;
+}
+
+.date-info{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.price-info-row{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.available-card{
+  width: 184px;
+  height: 65px;
+  background: #7DCF8F;
+  border-radius: 17px;
+  margin-top: 90px;
+}
+
+.available-text{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.price-info-div{
+  margin-top: 100px;
+}
+
+.price-info{
+  font-size: 35px;
+  font-weight: 300;
+}
+
 .login-page{
   display:flex;
   justify-content: center;
