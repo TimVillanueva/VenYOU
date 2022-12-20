@@ -8,6 +8,7 @@ import {useContext, useState} from 'react'
 import {DataContext} from './DataContext'
 import Events from './components/Events'
 import EventsDetails from './components/EventsDetails'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -33,6 +34,8 @@ const [currentEvent, setCurrentEvent] = useState({})
 
 
       </main>
+
+      <Footer />
 
     </div>
     </DataContext.Provider>

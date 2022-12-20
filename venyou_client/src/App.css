@@ -213,3 +213,13 @@ html{
   opacity: 100%;
   transition: opacity 0.25s;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-container {
+  margin: 25px;
+  font-weight: 700;
+}
